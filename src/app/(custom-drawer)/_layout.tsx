@@ -10,7 +10,7 @@ import { router } from "expo-router";
 import Feather from "@expo/vector-icons/Feather";
 import { Text } from "react-native";
 
-const CustomDrawerContent = (props: DrawerContentComponentProps) => {
+function CustomDrawerContent(props: DrawerContentComponentProps) {
   return (
     <DrawerContentScrollView>
       <Text style={{ textAlign: "center", padding: 16 }}>Hello Drawer</Text>
@@ -22,7 +22,7 @@ const CustomDrawerContent = (props: DrawerContentComponentProps) => {
       />
     </DrawerContentScrollView>
   );
-};
+}
 
 /**
  * @see https://docs.expo.dev/router/advanced/drawer/
